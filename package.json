@@ -1,0 +1,30 @@
+{
+  "name": "vue-test-2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gpush": "clasp push",
+    "gpull": "clasp pull",
+    "gstart": "clasp push --watch",
+    "build": "parcel build src/index.html --dist-dir ./appscript",
+    "nstart": "nodemon --watch src -e html,js,vue,css --exec \"npm run build\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.71",
+    "autoprefixer": "^10.4.16",
+    "nodemon": "^3.0.1",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.30",
+    "tailwindcss": "^3.3.3",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-vue": "^2.9.3"
+  }
+}
